@@ -7,24 +7,19 @@ body {
   background-color: #BBE9F8;
 }
 
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 #p1 {
   background-color: white;
-  height: 1300px;
+  height: 1100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 h1 {
-    margin-top: 250px;
+    margin-top: 230px;
     margin-left: 150px;
     font-size: 45px;
     font-weight: bold;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 #white_square {
@@ -36,6 +31,13 @@ h1 {
     b-webkit-box-shadow: 0 0 100px 50px #e1e7ed;
     -moz-box-shadow: 0 0 100px 50px #e1e7ed;
     box-shadow: 0 0 100px 30px #e1e7ed;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: -140px;
+  left: 0;
 }
 
 .wave {
