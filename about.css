@@ -3,6 +3,26 @@
     min-height: 110px;
 }
 
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: white;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FC6088;
+    background-color: white;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #FC6088;
+    background-color: white;
+}
+
 body {
   background-color: #BBE9F8;
 }
