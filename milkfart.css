@@ -1,0 +1,76 @@
+.navbar {
+    background-color: #C5D8F6;
+    min-height: 110px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #C5D8F6;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FC6088;
+    background-color: #C5D8F6;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #FC6088;
+    background-color: #C5D8F6;
+}
+
+body {
+  background-color: #9DC8FB;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wave {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#p1 {
+  margin-top: 100px;
+}
+
+.square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.square {
+    border: 30px solid #9DC8FB;
+    text-align: right;
+}
+
+.text {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    font-size: 25px;
+    font-weight: bold;
+}
