@@ -1,0 +1,48 @@
+.navbar {
+    background-color: white;
+    min-height: 110px;
+}
+
+body {
+  background-color: #BBE9F8;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#p1 {
+  background-color: white;
+  height: 1300px;
+}
+
+h1 {
+    margin-top: 250px;
+    margin-left: 150px;
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#white_square {
+    position: absolute;
+    left: 50%;
+    width: 46%;
+    margin-left: -23%;
+    margin-top: 5%;
+    b-webkit-box-shadow: 0 0 100px 50px #e1e7ed;
+    -moz-box-shadow: 0 0 100px 50px #e1e7ed;
+    box-shadow: 0 0 100px 30px #e1e7ed;
+}
+
+.wave {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%;
+  vertical-align: middle;
+  overflow: hidden;
+}
