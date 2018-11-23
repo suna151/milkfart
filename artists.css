@@ -1,3 +1,28 @@
+.navbar {
+  background-color: #eee3f7;
+  min-height: 60px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #eee3f7;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FC6088;
+    background-color: #eee3f7;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #FC6088;
+    background-color: #eee3f7;
+}
+
 svg {
   display: inline-block;
   position: absolute;
@@ -16,9 +41,9 @@ svg {
 
 h1 {
     position: absolute;
-    top: 62%;
-    left: 5%;
-    font-size: 50px;
+    top: 45%;
+    left: 8%;
+    font-size: 45px;
     font-weight: bold;
     padding-bottom: 50px;
 }
