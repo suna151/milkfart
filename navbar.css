@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #FAE8E4;
+    min-height: 110px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #8096e5;
+    line-height: 110px;
+    padding-right: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #FAE8E4;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FC6088;
+    background-color: #FAE8E4;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #FC6088;
+    background-color: #FAE8E4;
+}
+
+#raccoon {
+    height: 130px;
+    padding-left: 20px;
+}
+
+#right {
+    padding-right: 80px;
+}
