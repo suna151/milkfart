@@ -23,29 +23,23 @@
     background-color: #eee3f7;
 }
 
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+body {
+  background: url("images/purple.png") no-repeat;
+  background-size: 100%;
 }
 
 .wave {
-  display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 30%;
-  vertical-align: middle;
-  overflow: hidden;
+  padding-bottom: 29%;
 }
 
 h1 {
-  position: absolute;
-  top: 45%;
-  left: 8%;
-  font-size: 45px;
-  font-weight: bold;
-  padding-bottom: 50px;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .square:before{
@@ -66,7 +60,7 @@ h1 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  height: 300px;
+  height: 80%;
 }
 
 .overlay {
@@ -104,4 +98,24 @@ h1 {
 
 .square:hover .text {
   opacity: 1;
+}
+
+a:hover {
+  color: #FC6088;
+}
+
+.modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.modal-header {
+  background-color: #FEBEBF;
+  color: white;
+  border: none;
+}
+
+.placeholder {
+  width: 100%;
 }

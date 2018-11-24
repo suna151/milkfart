@@ -27,20 +27,24 @@ body {
   background-color: #BBE9F8;
 }
 
-#p1 {
+.title {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20%;
   background-color: white;
-  height: 1100px;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 h1 {
     position: absolute;
-    top: 29%;
-    left: 8%;
+    top: 44%;
+    left: 5%;
     font-size: 45px;
     font-weight: bold;
-    padding-bottom: 50px;
+}
+
+#p1 {
+  background-color: white;
+  height: 700px;
 }
 
 #white_square {
@@ -48,7 +52,6 @@ h1 {
     left: 50%;
     width: 46%;
     margin-left: -23%;
-    margin-top: 25%;
     b-webkit-box-shadow: 0 0 100px 50px #e1e7ed;
     -moz-box-shadow: 0 0 100px 50px #e1e7ed;
     box-shadow: 0 0 100px 30px #e1e7ed;

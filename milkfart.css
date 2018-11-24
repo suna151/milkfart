@@ -24,36 +24,22 @@
 }
 
 body {
-  background-color: #9DC8FB;
-}
-
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: url("images/blue.png") no-repeat;
+  background-size: 100%;
 }
 
 .wave {
-  display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 30%;
-  vertical-align: middle;
-  overflow: hidden;
+  padding-bottom: 29%;
 }
 
 h1 {
     position: absolute;
-    top: 45%;
-    left: 8%;
+    top: 32%;
+    left: 5%;
     font-size: 45px;
     font-weight: bold;
-    padding-bottom: 50px;
-}
-
-#p1 {
-  margin-top: 100px;
 }
 
 .square:before{
@@ -63,7 +49,7 @@ h1 {
 }
 
 .square {
-    border: 30px solid #9DC8FB;
+    border: 26px solid #9DC8FB;
     text-align: right;
 }
 
