@@ -1,0 +1,61 @@
+.navbar {
+    background-color: #FAE8E4;
+    min-height: 60px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #8096e5;
+    line-height: 60px;
+    padding-right: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #FAE8E4;
+}
+
+.navbar-blue {
+    background-color: #C5D8F6;
+    min-height: 60px;
+}
+
+.navbar-blue .navbar-nav > li > a:hover,
+.navbar-blue .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #C5D8F6;
+}
+
+.navbar-purple {
+  background-color: #eee3f7;
+  min-height: 60px;
+}
+
+.navbar-purple .navbar-nav > li > a:hover,
+.navbar-purple .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: #eee3f7;
+}
+
+.navbar-white {
+    background-color: white;
+    min-height: 60px;
+}
+
+.navbar-white .navbar-nav > li > a:hover,
+.navbar-white .navbar-nav > li > a:focus {
+    color: #FC6088;
+    background-color: white;
+}
+
+#raccoon {
+    height: 80px;
+    margin-left: -5px;
+    margin-top: 5px;
+}
+
+#right {
+    padding-right: 80px;
+}

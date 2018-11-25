@@ -1,34 +1,3 @@
-/*NAVBAR*/
-
-.navbar {
-    background-color: #FAE8E4;
-    min-height: 60px;
-}
-
-.navbar .navbar-nav > li > a {
-    color: #8096e5;
-    line-height: 60px;
-    padding-right: 40px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-    color: #FC6088;
-    background-color: #FAE8E4;
-}
-
-#raccoon {
-    height: 80px;
-    margin-left: -5px;
-    margin-top: 5px;
-}
-
-#right {
-    padding-right: 80px;
-}
-
 /*SHOP*/
 
 .shop {
@@ -71,24 +40,13 @@
 
 .text-shop {
   position: absolute;
-  top: 85%;
-  left: 60%;
+  bottom: 8%;
+  right: 8%;
   font-size: 25px;
   font-weight: bold;
 }
 
 /*MILKFART*/
-
-.navbar-blue {
-    background-color: #C5D8F6;
-    min-height: 60px;
-}
-
-.navbar-blue .navbar-nav > li > a:hover,
-.navbar-blue .navbar-nav > li > a:focus {
-    color: #FC6088;
-    background-color: #C5D8F6;
-}
 
 .milkfart {
   background: url("images/blue.png") no-repeat;
@@ -105,17 +63,6 @@
 }
 
 /*ARTISTS*/
-
-.navbar-purple {
-  background-color: #eee3f7;
-  min-height: 60px;
-}
-
-.navbar-purple .navbar-nav > li > a:hover,
-.navbar-purple .navbar-nav > li > a:focus {
-    color: #FC6088;
-    background-color: #eee3f7;
-}
 
 .artists {
   background: url("images/purple.png") no-repeat;
@@ -196,22 +143,7 @@
   border: none;
 }
 
-.placeholder {
-  width: 100%;
-}
-
 /*ABOUT*/
-
-.navbar-white {
-    background-color: white;
-    min-height: 60px;
-}
-
-.navbar-white .navbar-nav > li > a:hover,
-.navbar-white .navbar-nav > li > a:focus {
-    color: #FC6088;
-    background-color: white;
-}
 
 .about {
   background-color: #BBE9F8;
@@ -286,8 +218,8 @@ svg {
 }
 
 #p2 {
-    background-color: #9DC8FB;
-    height: 900px;
+    height: 100%;
+    padding-bottom: 5%;
 }
 
 #square-home {
@@ -341,4 +273,19 @@ svg {
 
 .return-link:hover {
   color: #FC6088;
+}
+
+.artist {
+  display: flex;
+  align-items:top;
+}
+
+.art {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.name {
+  margin-left: 15px;
 }

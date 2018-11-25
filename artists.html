@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Shop</title>
+        <title>Artists</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -26,7 +27,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 square-artists" style="background:#BBE9F8">
+                <div class="col-md-4 col-sm-4 square-artists" style="background:#BBE9F8">
                     <img src="images/roddy.png" class="image">
                     <div class="overlay"></div>
                     <a data-toggle="modal" data-target="#rodrigo" class="text-artists">Rodrigo</a>
@@ -36,35 +37,23 @@
                         <div class="modal-content">
                             <div class="modal-header" style="background:#8cd9f2">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">RODRIGO</h4>
+                                <h4 class="modal-title">Rodrigo Lee</h4>
                             </div>
                             <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="images/placeholder.png" class="placeholder">
-                                    </div>
+                                <div class="artist">
+                                    <img src="images/placeholder.png" style="width: 50%; height: 50%">
+                                    <span class="name">Text</span>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        Text
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/placeholder.png" class="placeholder">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="images/placeholder.png" class="placeholder">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="images/placeholder.png" class="placeholder">
-                                    </div>
+                                <div class="art">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 square-artists" style="background:#FEBEBF">
+                <div class="col-md-4 col-sm-4 square-artists" style="background:#FEBEBF">
                     <img src="images/diana.png" class="image">
                     <div class="overlay"></div>
                     <a data-toggle="modal" data-target="#diana" class="text-artists">Diana</a>
@@ -74,15 +63,23 @@
                         <div class="modal-content">
                             <div class="modal-header" style="background:#fdb4b5">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">DIANA</h4>
+                                <h4 class="modal-title">Diana Victoreen</h4>
                             </div>
                             <div class="modal-body">
-                                <p>Some text in the modal 2.</p>
+                                <div class="artist">
+                                    <img src="images/placeholder.png" style="width: 50%; height: 50%">
+                                    <span class="name">Text</span>
+                                </div>
+                                <div class="art">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 square-artists" style="background-color:#fff6b2">
+                <div class="col-md-4 col-sm-4 square-artists" style="background-color:#fff6b2">
                     <div class="overlay"></div>
                     <div class="text-artists">...</div>
                     <a data-toggle="modal" data-target="#test" class="text-artists">...</a>
@@ -92,25 +89,33 @@
                         <div class="modal-content">
                             <div class="modal-header" style="background:#fff080">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">TEST</h4>
+                                <h4 class="modal-title">. . .</h4>
                             </div>
                             <div class="modal-body">
-                                <p>Some text in the modal 3.</p>
+                                <div class="artist">
+                                    <img src="images/placeholder.png" style="width: 50%; height: 50%">
+                                    <span class="name">Text</span>
+                                </div>
+                                <div class="art">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                    <img src="images/placeholder.png" style="width: 30%; height: 30%">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 square-artists" style="background-color:#9DC8FB">
+                <div class="col-md-4 col-sm-4 square-artists" style="background-color:#9DC8FB">
                     <div class="overlay"></div>
                     <div class="text-artists">...</div>
                 </div>
-                <div class="col-md-4 square-artists" style="background-color:#C5D8F6">
+                <div class="col-md-4 col-sm-4 square-artists" style="background-color:#C5D8F6">
                     <div class="overlay"></div>
                     <div class="text-artists">...</div>
                 </div>
-                <div class="col-md-4 square-artists" style="background-color:#BBE9F8">
+                <div class="col-md-4 col-sm-4 square-artists" style="background-color:#BBE9F8">
                     <div class="overlay"></div>
                     <div class="text-artists">...</div>
                 </div>
