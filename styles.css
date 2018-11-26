@@ -40,7 +40,7 @@
 
 .text-shop {
   position: absolute;
-  bottom: 8%;
+  bottom: 6%;
   right: 8%;
   font-size: 25px;
   font-weight: bold;
@@ -101,6 +101,17 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #ffccff;
+}
+
+.overlay2 {
+  background-image: url('images/tr_front.png');
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.overlay2:hover {
+  background-image: url('images/tr_back.png');
 }
 
 #overlay2, #overlay3 {
@@ -299,6 +310,17 @@ svg {
   b-webkit-box-shadow: 0 0 100px 50px #e1e7ed;
   -moz-box-shadow: 0 0 100px 50px #e1e7ed;
   box-shadow: 0 0 100px 30px #e1e7ed;
+}
+
+.product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 80%;
 }
 
 .text-product {
