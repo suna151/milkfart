@@ -31,94 +31,39 @@
                 <div class="col-md-4 col-sm-4 square-artists" style="background:#BBE9F8">
                     <img src="images/artists/roddy1.png" class="image">
                     <div class="overlay"></div>
-                    <a data-toggle="modal" data-target="#rodrigo" class="text-artists">Rodrigo</a>
-                </div>
-                <div class="modal fade" id="rodrigo" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="background:#8cd9f2">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Rodrigo Lee</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div id="content">
-                                    <div class="artist">
-                                        <img src="images/artists/roddy2.png" style="width: 45%; height: 45%">
-                                        <span class="name">Text</span>
-                                    </div>
-                                    <div class="gallery">
-                                        <img src="images/artists/roddy-art-1.png" onclick="showImage(this)" class="art" style="height: 200px">
-                                        <img src="images/artists/roddy-art-2.png" onclick="showImage(this)" class="art" style="height: 200px">
-                                        <img src="images/artists/roddy-art-3.png" onclick="showImage(this)" class="art" style="height: 200px">
-                                    </div>
-                                </div>
-                                <div id="overlay2">
-                                    <span id="back">&larr;</span>
-                                    <img id="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a data-toggle="modal" data-target="#myModal" onclick="fillModal(this.id)" id="rodrigo" class="text-artists">Rodrigo</a>
                 </div>
                 <div class="col-md-4 col-sm-4 square-artists" style="background:#FEBEBF">
                     <img src="images/artists/diana1.png" class="image">
                     <div class="overlay"></div>
-                    <a data-toggle="modal" data-target="#diana" class="text-artists">Diana</a>
-                </div>
-                <div class="modal fade" id="diana" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="background:#fdb4b5">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Diana Victoreen</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div id="content2">
-                                    <div class="artist">
-                                        <img src="images/artists/diana2.png" style="width: 45%; height: 45%">
-                                        <span class="name">Text</span>
-                                    </div>
-                                    <div class="gallery">
-                                        <img src="images/artists/diana-art-1.png" onclick="showImage2(this)" class="art" style="height: 176px">
-                                        <img src="images/artists/diana-art-2.png" onclick="showImage2(this)" class="art" style="height: 176px">
-                                        <img src="images/artists/diana-art-3.png" onclick="showImage2(this)" class="art" style="height: 176px">
-                                    </div>
-                                </div>
-                                <div id="overlay3">
-                                    <span id="back2">&larr;</span>
-                                    <img id="img2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a data-toggle="modal" data-target="#myModal" onclick="fillModal(this.id)" id="diana" class="text-artists">Diana</a>
                 </div>
                 <div class="col-md-4 col-sm-4 square-artists" style="background-color:#fff6b2">
                     <div class="overlay"></div>
-                    <div class="text-artists">...</div>
-                    <a data-toggle="modal" data-target="#test" class="text-artists">...</a>
+                    <a data-toggle="modal" data-target="#myModal" onclick="fillModal(this.id)" id="placeholder" class="text-artists">Placeholder</a>
                 </div>
-                <div class="modal fade" id="test" role="dialog">
+                <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header" style="background:#fff080">
+                            <div class="modal-header" id="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">. . .</h4>
+                                <h4 class="modal-title" id="modal-title"></h4>
                             </div>
                             <div class="modal-body">
                                 <div id="content">
                                     <div class="artist">
-                                        <img src="images/placeholder.png" style="width: 45%; height: 45%">
-                                        <span class="name">Text</span>
+                                        <img id="pic" style="width: 45%; height: 45%">
+                                        <span id="info"></span>
                                     </div>
                                     <div class="gallery">
-                                        <img src="images/placeholder.png" class="art" id="1" style="height: 180px">
-                                        <img src="images/placeholder.png" class="art" style="height: 180px">
-                                        <img src="images/placeholder.png" class="art" style="height: 180px">
+                                        <img id="art-1" onclick="showImage(this)" class="art">
+                                        <img id="art-2" onclick="showImage(this)" class="art">
+                                        <img id="art-3" onclick="showImage(this)" class="art">
                                     </div>
                                 </div>
-                                <div id="overlay2">
-                                    <span class="back">&larr;</span>
-                                    <img src="images/artists/diana-art-1.png" id="img">
+                                <div id="art-big">
+                                    <span id="back">&larr;</span>
+                                    <img id="img">
                                 </div>
                             </div>
                         </div>
@@ -141,8 +86,54 @@
             </div>
         </div>
         <script>
+            function fillModal(name) {
+                var overlay = document.getElementById('art-big');
+                var under = document.getElementById('content');
+                overlay.style.display = "none";
+                under.style.display = "block";
+                
+                var id = name;
+                var title = document.getElementById("modal-title");
+                var pic = document.getElementById("pic");
+                var info = document.getElementById("info");
+                var art1 = document.getElementById("art-1");
+                var art2 = document.getElementById("art-2");
+                var art3 = document.getElementById("art-3");
+                var back = document.getElementById("back");
+                var header = document.getElementById("modal-header")
+                if (id == "rodrigo") {
+                    title.innerHTML = "Rodrigo Lee";
+                    pic.src = "images/artists/roddy2.png";
+                    info.innerHTML = "Text";
+                    art1.src = "images/artists/roddy-art-1.png";
+                    art2.src = "images/artists/roddy-art-2.png";
+                    art3.src = "images/artists/roddy-art-3.png";
+                    art1.style.height = art2.style.height = art3.style.height = "200px";
+                    back.style.color = "#8cd9f2";
+                    header.style.background = "#8cd9f2";
+                } else if (id == "diana") {
+                    title.innerHTML = "Diana Victoreen";
+                    pic.src = "images/artists/diana2.png";
+                    info.innerHTML = "Text";
+                    art1.src = "images/artists/diana-art-1.png";
+                    art2.src = "images/artists/diana-art-2.png";
+                    art3.src = "images/artists/diana-art-3.png";
+                    art1.style.height = art2.style.height = art3.style.height = "176px";
+                    back.style.color = "#fdb4b5";
+                    header.style.background = "#fdb4b5";
+                } else if (id == "placeholder") {
+                    title.innerHTML = "Placeholder";
+                    pic.src = "images/placeholder.png";
+                    info.innerHTML = "Text";
+                    art1.src = "images/placeholder.png";
+                    art2.src = "images/placeholder.png";
+                    art3.src = "images/placeholder.png";
+                    art1.style.height = art2.style.height = art3.style.height = "180px";
+                }
+            }
+
             function showImage(img) {
-                var overlay = document.getElementById('overlay2');
+                var overlay = document.getElementById('art-big');
                 var under = document.getElementById('content');
                 var modalImg = document.getElementById('img');
                 overlay.style.display = "block";
@@ -150,30 +141,23 @@
                 under.style.display = "none";
                 modalImg.src = img.src;
             }
-
-            function showImage2(img) {
-                var overlay2 = document.getElementById('overlay3');
-                var under2 = document.getElementById('content2');
-                var modalImg2 = document.getElementById('img2');
-                overlay2.style.display = "block";
-                overlay2.style.zIndex = "1";
-                under2.style.display = "none";
-                modalImg2.src = img.src;
-            }
             
             var span = document.getElementById('back');
-            var span2 = document.getElementById('back2');
 
-            span.onclick = function() {
-                var overlay = document.getElementById('overlay2');
-                var under = document.getElementById('content');
-                overlay.style.display = "none";
-                under.style.display = "block";
+            var previous;
+
+            span.onmouseenter = function() {
+                previous = this.style.color;
+                this.style.color = "#FC6088";
             }
 
-            span2.onclick = function() {
-                var overlay = document.getElementById('overlay3');
-                var under = document.getElementById('content2');
+            span.onmouseout = function() {
+                this.style.color = previous;
+            }
+
+            span.onclick = function() {
+                var overlay = document.getElementById('art-big');
+                var under = document.getElementById('content');
                 overlay.style.display = "none";
                 under.style.display = "block";
             }

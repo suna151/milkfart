@@ -108,7 +108,7 @@
   background-image: url('images/tr_back.png');
 }
 
-#overlay2, #overlay3 {
+#art-big {
   display: none;
   transition: 2s ease;
   z-index: 0;
@@ -122,7 +122,7 @@
   margin-bottom: 10px;
 }
 
-#back, #back2 {
+#back {
   position: absolute;
   top: 15px;
   left: 35px;
@@ -132,17 +132,9 @@
   transition: 0.3s;
 }
 
-#back:hover, #back:focus {
-  color: #8cd9f2;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#back2:hover, #back2:focus {
-  color: #fdb4b5;
-  text-decoration: none;
-  cursor: pointer;
-}
+/*#back:hover {
+  color: #FC6088;
+}*/
 
 .square-artists:hover .overlay {
   opacity: 0.7;
@@ -182,12 +174,10 @@
 }
 
 .modal-header {
-  background-color: #FEBEBF;
+  background: gray;
   color: white;
   border: none;
 }
-
-/*ABOUT*/
 
 .about {
   background-color: #BBE9F8;
@@ -346,6 +336,6 @@ svg {
   cursor: pointer;
 }
 
-.name {
+#info {
   margin-left: 15px;
 }
