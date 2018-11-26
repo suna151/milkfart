@@ -41,14 +41,20 @@
                                 <h4 class="modal-title">Rodrigo Lee</h4>
                             </div>
                             <div class="modal-body">
-                                <div class="artist">
-                                    <img src="images/artists/roddy2.png" style="width: 45%; height: 45%">
-                                    <span class="name">Text</span>
+                                <div id="content">
+                                    <div class="artist">
+                                        <img src="images/artists/roddy2.png" style="width: 45%; height: 45%">
+                                        <span class="name">Text</span>
+                                    </div>
+                                    <div class="gallery">
+                                        <img src="images/artists/roddy-art-1.png" onclick="showImage(this)" class="art" style="height: 200px">
+                                        <img src="images/artists/roddy-art-2.png" onclick="showImage(this)" class="art" style="height: 200px">
+                                        <img src="images/artists/roddy-art-3.png" onclick="showImage(this)" class="art" style="height: 200px">
+                                    </div>
                                 </div>
-                                <div class="art">
-                                    <img src="images/artists/roddy-art-1.png" style="height: 200px">
-                                    <img src="images/artists/roddy-art-2.png" style="height: 200px">
-                                    <img src="images/artists/roddy-art-3.png" style="height: 200px">
+                                <div id="overlay2">
+                                    <span id="back">&larr;</span>
+                                    <img id="img">
                                 </div>
                             </div>
                         </div>
@@ -67,14 +73,20 @@
                                 <h4 class="modal-title">Diana Victoreen</h4>
                             </div>
                             <div class="modal-body">
-                                <div class="artist">
-                                    <img src="images/artists/diana2.png" style="width: 45%; height: 45%">
-                                    <span class="name">Text</span>
+                                <div id="content2">
+                                    <div class="artist">
+                                        <img src="images/artists/diana2.png" style="width: 45%; height: 45%">
+                                        <span class="name">Text</span>
+                                    </div>
+                                    <div class="gallery">
+                                        <img src="images/artists/diana-art-1.png" onclick="showImage2(this)" class="art" style="height: 176px">
+                                        <img src="images/artists/diana-art-2.png" onclick="showImage2(this)" class="art" style="height: 176px">
+                                        <img src="images/artists/diana-art-3.png" onclick="showImage2(this)" class="art" style="height: 176px">
+                                    </div>
                                 </div>
-                                <div class="art">
-                                    <img src="images/artists/diana-art-1.png" style="height: 176px">
-                                    <img src="images/artists/diana-art-2.png" style="height: 176px">
-                                    <img src="images/artists/diana-art-3.png" style="height: 176px">
+                                <div id="overlay3">
+                                    <span id="back2">&larr;</span>
+                                    <img id="img2">
                                 </div>
                             </div>
                         </div>
@@ -93,14 +105,20 @@
                                 <h4 class="modal-title">. . .</h4>
                             </div>
                             <div class="modal-body">
-                                <div class="artist">
-                                    <img src="images/placeholder.png" style="width: 45%; height: 45%">
-                                    <span class="name">Text</span>
+                                <div id="content">
+                                    <div class="artist">
+                                        <img src="images/placeholder.png" style="width: 45%; height: 45%">
+                                        <span class="name">Text</span>
+                                    </div>
+                                    <div class="gallery">
+                                        <img src="images/placeholder.png" class="art" id="1" style="height: 180px">
+                                        <img src="images/placeholder.png" class="art" style="height: 180px">
+                                        <img src="images/placeholder.png" class="art" style="height: 180px">
+                                    </div>
                                 </div>
-                                <div class="art">
-                                    <img src="images/placeholder.png" style="height: 180px">
-                                    <img src="images/placeholder.png" style="height: 180px">
-                                    <img src="images/placeholder.png" style="height: 180px">
+                                <div id="overlay2">
+                                    <span class="back">&larr;</span>
+                                    <img src="images/artists/diana-art-1.png" id="img">
                                 </div>
                             </div>
                         </div>
@@ -122,5 +140,43 @@
                 </div>
             </div>
         </div>
+        <script>
+            function showImage(img) {
+                var overlay = document.getElementById('overlay2');
+                var under = document.getElementById('content');
+                var modalImg = document.getElementById('img');
+                overlay.style.display = "block";
+                overlay.style.zIndex = "1";
+                under.style.display = "none";
+                modalImg.src = img.src;
+            }
+
+            function showImage2(img) {
+                var overlay2 = document.getElementById('overlay3');
+                var under2 = document.getElementById('content2');
+                var modalImg2 = document.getElementById('img2');
+                overlay2.style.display = "block";
+                overlay2.style.zIndex = "1";
+                under2.style.display = "none";
+                modalImg2.src = img.src;
+            }
+            
+            var span = document.getElementById('back');
+            var span2 = document.getElementById('back2');
+
+            span.onclick = function() {
+                var overlay = document.getElementById('overlay2');
+                var under = document.getElementById('content');
+                overlay.style.display = "none";
+                under.style.display = "block";
+            }
+
+            span2.onclick = function() {
+                var overlay = document.getElementById('overlay3');
+                var under = document.getElementById('content2');
+                overlay.style.display = "none";
+                under.style.display = "block";
+            }
+        </script>
     </body>
 </html>

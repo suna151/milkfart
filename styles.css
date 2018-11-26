@@ -103,8 +103,45 @@
   background-color: #ffccff;
 }
 
+#overlay2, #overlay3 {
+  display: none;
+  transition: 2s ease;
+  z-index: 0;
+}
+
+#img, #img2 {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#back, #back2 {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#back:hover, #back:focus {
+  color: #8cd9f2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#back2:hover, #back2:focus {
+  color: #fdb4b5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .square-artists:hover .overlay {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .text-artists {
@@ -125,10 +162,12 @@
 
 .square-artists:hover .text-artists {
   opacity: 1;
+  cursor: pointer;
 }
 
 .text-artists:hover {
   color: #FC6088;
+  cursor: pointer;
 }
 
 .modal-content {
@@ -273,6 +312,7 @@ svg {
 
 .return-link:hover {
   color: #FC6088;
+  cursor: pointer;
 }
 
 .artist {
@@ -280,11 +320,16 @@ svg {
   align-items:top;
 }
 
-.art {
+.gallery {
   display: flex;
   justify-content: space-between;
   margin-top: 4%;
   margin-bottom: 1%;
+}
+
+.art:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .name {
