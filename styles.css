@@ -3,7 +3,7 @@
   background-size: 100%;
 }
 
-.wave {
+.title {
   position: relative;
   width: 100%;
   padding-bottom: 29%;
@@ -11,18 +11,14 @@
 
 .h1 {
   position: absolute;
-  top: 32%;
+  top: 31%;
   left: 5%;
   font-size: 45px;
   font-weight: bold;
 }
 
 .h1-product {
-  position: absolute;
-  top: 32%;
-  left: 5%;
   font-size: 35px;
-  font-weight: bold;
 }
 
 .square:before{
@@ -146,7 +142,6 @@
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 .square-artists:hover .overlay {
@@ -193,13 +188,6 @@
 }
 
 .about {
-  background-color: #BBE9F8;
-}
-
-.title {
-  position: relative;
-  width: 100%;
-  padding-bottom: 29%;
   background-color: white;
 }
 
@@ -213,8 +201,8 @@
     left: 50%;
     width: 46%;
     margin-left: -23%;
-    b-webkit-box-shadow: 0 0 100px 50px #e1e7ed;
-    -moz-box-shadow: 0 0 100px 50px #e1e7ed;
+    b-webkit-box-shadow: 0 0 100px 30px #e1e7ed;
+    -moz-box-shadow: 0 0 100px 30px #e1e7ed;
     box-shadow: 0 0 100px 30px #e1e7ed;
 }
 
@@ -223,15 +211,6 @@ svg {
   position: absolute;
   top: -140px;
   left: 0;
-}
-
-.wave-about {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 30%;
-  vertical-align: middle;
-  overflow: hidden;
 }
 
 #logo {
@@ -351,4 +330,80 @@ svg {
 
 #info {
   margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .shop {
+    background: #FAE8E4;
+  }
+
+  .milkfart {
+    background: #C5D8F6;
+  }
+
+  .artists {
+    background: #eee3f7;
+  }
+
+  .about {
+    background: white;
+  }
+
+  .title {
+    position: relative;
+    width: 100%;
+    padding-bottom: 120px;
+  }
+
+  .h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .h1-product {
+    font-size: 25px;
+  }
+
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('images/tr_front.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+  }
+
+  .text-shop {
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #square-about {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    width: 60%;
+    margin-left: -30%;
+    b-webkit-box-shadow: 0 0 80px 20px #e1e7ed;
+    -moz-box-shadow: 0 0 80px 20px #e1e7ed;
+    box-shadow: 0 0 80px 20px #e1e7ed;
+  }
+
+  #back {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: bold;
+  }
 }

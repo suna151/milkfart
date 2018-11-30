@@ -32,7 +32,7 @@
                 </div>
             </div>
         </nav>
-        <div class="wave">
+        <div class="title">
             <h1 class="h1">artists.</h1>
         </div>
         <div class="container-fluid">
@@ -95,6 +95,8 @@
             </div>
         </div>
         <script>
+            var x = window.matchMedia("(max-width: 767px)")
+
             function fillModal(name) {
                 var overlay = document.getElementById('art-big');
                 var under = document.getElementById('content');
@@ -117,7 +119,11 @@
                     art1.src = "images/artists/roddy-art-1.png";
                     art2.src = "images/artists/roddy-art-2.png";
                     art3.src = "images/artists/roddy-art-3.png";
-                    art1.style.height = art2.style.height = art3.style.height = "200px";
+                    if (x.matches) {
+                        art1.style.height = art2.style.height = art3.style.height = "125px";
+                    } else {
+                        art1.style.height = art2.style.height = art3.style.height = "200px";
+                    }
                     back.style.color = "#8cd9f2";
                     header.style.background = "#8cd9f2";
                 } else if (id == "diana") {
@@ -127,7 +133,11 @@
                     art1.src = "images/artists/diana-art-1.png";
                     art2.src = "images/artists/diana-art-2.png";
                     art3.src = "images/artists/diana-art-3.png";
-                    art1.style.height = art2.style.height = art3.style.height = "176px";
+                    if (x.matches) {
+                        art1.style.height = art2.style.height = art3.style.height = "115px";
+                    } else {
+                        art1.style.height = art2.style.height = art3.style.height = "176px";
+                    }
                     back.style.color = "#fdb4b5";
                     header.style.background = "#fdb4b5";
                 } else if (id == "placeholder") {
@@ -137,7 +147,11 @@
                     art1.src = "images/placeholder.png";
                     art2.src = "images/placeholder.png";
                     art3.src = "images/placeholder.png";
-                    art1.style.height = art2.style.height = art3.style.height = "180px";
+                    if (x.matches) {
+                        art1.style.height = art2.style.height = art3.style.height = "115px";
+                    } else {
+                        art1.style.height = art2.style.height = art3.style.height = "180px";
+                    }
                 }
             }
 
