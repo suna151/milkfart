@@ -17,11 +17,6 @@
     background-color: #FAE8E4;
 }
 
-.navbar .navbar-toggle {
-    height: 100%;
-    width: 10%;
-}
-
 .navbar .navbar-toggle .icon-bar {
     background-color: #8096e5;
 }
@@ -76,7 +71,7 @@
 
     #raccoon {
         height: 11vw;
-        margin-left: 2vw;
+        margin-left: 3vw;
     }
 
     .navbar .navbar-nav > li > a {

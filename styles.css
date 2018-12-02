@@ -6,12 +6,13 @@
 .title {
   position: relative;
   width: 100%;
-  padding-bottom: 29%;
+  height: 29vw;
 }
 
 .h1 {
   position: absolute;
   top: 31%;
+  bottom: auto;
   left: 5%;
   font-size: 45px;
   font-weight: bold;
@@ -352,13 +353,10 @@ svg {
     background: white;
   }
 
-  .title {
-    padding-bottom: 27vw;
-  }
-
   .h1 {
     position: absolute;
-    top: 11vw;
+    bottom: 2vw;
+    top: auto;
     left: 5vw;
     font-size: 6vw;
   }
