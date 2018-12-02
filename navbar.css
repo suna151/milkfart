@@ -71,17 +71,16 @@
 
 @media (max-width: 767px) {
     .navbar {
-        min-height: 50px;
+        min-height: 15vw;
     }
 
     #raccoon {
-        height: 50px;
-        margin-left: 11px;
-        margin-top: 5px;
+        height: 11vw;
+        margin-left: 2vw;
     }
 
     .navbar .navbar-nav > li > a {
-        line-height: 30px;
-        font-size: 12px;
+        line-height: 8vw;
+        font-size: 3.5vw;
     }
 }
